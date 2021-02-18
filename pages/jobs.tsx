@@ -38,7 +38,7 @@ export default function Jobs({ jobs }: Props) {
   return (
     <Page meta={meta}>
       <Layout>
-        <Header hero="Career Fair" description={meta.description} />
+        <Header hero="Área de Trabalho" description={meta.description} />
         <JobsGrid jobs={jobs} />
       </Layout>
     </Page>
@@ -52,6 +52,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     props: {
       jobs
     },
-    revalidate: 60
+    revalidate: 1
   };
 };
