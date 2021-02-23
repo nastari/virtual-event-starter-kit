@@ -23,9 +23,9 @@ export default function LearnMore() {
   return (
     <div className={cn(styleUtils.appear, styleUtils['appear-fifth'], styles.contact)}>
       Leia mais no{' '}
-      <a href={REPO} className={styles['contact-email']} target="_blank" rel="noopener noreferrer">
+      {/* <a href={REPO} className={styles['contact-email']} target="_blank" rel="noopener noreferrer"> */}
         Blog
-      </a>
+      {/* </a> */}
       .
     </div>
   );

@@ -38,12 +38,12 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
 
   return (
     <>
-      <ViewSource />
+      {/* <ViewSource /> */}
       <div className={styles.background}>
         {!hideNav && (
           <header className={cn(styles.header)}>
             <div className={styles['header-logos']}>
-              <MobileMenu key={router.asPath} />
+              {/* <MobileMenu key={router.asPath} /> */}
               <Link href="/">
                 {/* eslint-disable-next-line */}
                 <a className={styles.logo}>
@@ -51,7 +51,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
                 </a>
               </Link>
             </div>
-            <div className={styles.tabs}>
+            {/* <div className={styles.tabs}>
               {NAVIGATION.map(({ name, route }) => (
                 <Link key={name} href={route}>
                   <a
@@ -66,7 +66,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
             </div>
             <div className={cn(styles['header-right'])}>
               <HostedByVercel />
-            </div>
+            </div> */}
           </header>
         )}
         <div className={styles.page}>
@@ -74,7 +74,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
             <SkipNavContent />
             <div className={cn(styles.full, className)}>{children}</div>
           </main>
-          {!activeRoute.startsWith('/stage') && <Footer />}
+          {/* {!activeRoute.startsWith('/stage') && <Footer />} */}
         </div>
       </div>
     </>
